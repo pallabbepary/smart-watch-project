@@ -35,6 +35,28 @@ function selectWristSize(size){
     }
 }
 
+
+//Quantity & Add to Cart
+
+// এখানে একি কাজ দুইবার করা হয়েছে
+// Option - 1 ==> এটা ভিডিওতে দেখাইছে
+// const quantityButton = document.querySelectorAll(".quantity-button");
+// for(let btn of quantityButton){
+//     btn.addEventListener("click", function(event){
+//         event.preventDefault();
+//         const amount = event.target.innerText === "+" ? 1 : -1;
+       
+//         const quantityElement = document.getElementById("quantity");
+//         const currentQuantity = parseInt(quantityElement.innerText);
+        
+//         const newQuantity = Math.max(0, currentQuantity + amount);
+//         quantityElement.innerText = newQuantity;
+//     })
+// }
+
+// Option - 2 ==> এটা আমি নিজে করেছি বুঝে বুঝে...দুইটার কাজ এক-ই
+
+
 const quantityButton = document.querySelectorAll(".quantity-button");
 for(let i = 0; i<quantityButton.length; i++){
     const quantityButtonAll = quantityButton[i];
